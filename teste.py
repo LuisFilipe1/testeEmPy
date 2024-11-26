@@ -15,30 +15,29 @@ print ("| A partir de agora é assim que irei lhe chamar: "+nomePlayer+((tamanho
 print ("| "+nomePlayer+" Para começarmos com a criação do seu Personagem Jogavel preciso que escolha a raça     |")
 def escolhaRaca(raca):
 	raca = int(input("| As opções de raça são:\n| 1 - Anão\n| 2 - Elfo\n| 3 - Halfling\n| 4 - Humano\n| 5 - Draconato\n| 6 - Gnomo\n| 7 - Meio-Elfo\n| 8 - Meio-Orc\n| 9 - Tiefling\n| Digite 1 para selecionar sua raça ou 2 para mais informações das raças.\n| "))
-	return raca
-if raca == 2:
-	infoRaca = int(input("| Qual raca deseja saber mais ?"))
-	if infoRaca == 1:
-		print ("| Informações dos Anãos")
-	elif infoRaca == 2:
-		print ("| Informações dos Elfos")
-	elif infoRaca == 3:
-		print ("| Informações dos Halflings")
-	elif infoRaca == 4:
-		print ("| Informações dos Humano")
-	elif infoRaca == 5:
-		print ("| Informações Draconato")
-	elif infoRaca == 6:
-		print ("| Informações Gnomo")
-	elif infoRaca == 7:
-		print ("| Informações Meio-Elfo")
-	elif infoRaca == 8:
-		print ("| Informações Meio-Orc")
+	if raca == 2:
+		infoRaca = int(input("| Qual raca deseja saber mais ?"))
+		if infoRaca == 1:
+			print ("| Informações dos Anãos")
+		elif infoRaca == 2:
+			print ("| Informações dos Elfos")
+		elif infoRaca == 3:
+			print ("| Informações dos Halflings")
+		elif infoRaca == 4:
+			print ("| Informações dos Humano")
+		elif infoRaca == 5:
+			print ("| Informações Draconato")
+		elif infoRaca == 6:
+			print ("| Informações Gnomo")
+		elif infoRaca == 7:
+			print ("| Informações Meio-Elfo")
+		elif infoRaca == 8:
+			print ("| Informações Meio-Orc")
+		else:
+			print ("| Informações Tiefling")
 	else:
-		print ("| Informações Tiefling")
-else:
-	raca = int(input("| Qual raça você escolheu ?"))
-dadosUsers["raca"].append(raca)
-if raca > 2:
+		raca = int(input("| Qual raça você escolheu ?"))
+		dadosUsers["raca"].append(raca)
+	if raca > 2:
 		print ("Valor inválido, tente novamente")
 		escolhaRaca
