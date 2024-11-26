@@ -36,4 +36,3 @@ if raca == 2:
 else:
 	raca = int(input("| Qual raça você escolheu ?"))
 dadosUsers["raca"].append(raca)
-
