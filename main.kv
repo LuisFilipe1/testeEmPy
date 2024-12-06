@@ -1,0 +1,73 @@
+<MainLayout>:
+    orientation: 'vertical'
+    padding: 10
+    spacing: 10
+
+    # Seção do Título
+    Label:
+        text: "Dungeons & Dragons"
+        font_size: '32sp'
+        bold: True
+        halign: 'center'
+        size_hint_y: None
+        height: 50
+
+    # Informações do Personagem
+    BoxLayout:
+        orientation: 'horizontal'
+        spacing: 10
+        size_hint_y: None
+        height: 200
+
+        # Imagem do Personagem
+        Image:
+            source: 'personagem.png'  # Adicione uma imagem correspondente
+            size_hint: None, None
+            size: 150, 150
+
+        # Informações Básicas
+        BoxLayout:
+            orientation: 'vertical'
+            spacing: 5
+
+            Label:
+                text: "ELDERING"
+                font_size: '24sp'
+                bold: True
+
+            Label:
+                text: "Classe: Ranger"
+                font_size: '16sp'
+
+            Label:
+                text: "Raça: Meio-Elfo"
+                font_size: '16sp'
+
+    # Atributos e Dados
+    GridLayout:
+        cols: 2
+        spacing: 10
+        row_default_height: 50
+        row_force_default: True
+
+        Label:
+            text: "Atributo 1"
+        Label:
+            text: "15"
+
+        Label:
+            text: "Atributo 2"
+        Label:
+            text: "11"
+
+    # Rodapé
+    BoxLayout:
+        orientation: 'horizontal'
+        spacing: 10
+        size_hint_y: None
+        height: 50
+
+        Button:
+            text: "Salvar"
+        Button:
+            text: "Editar"
